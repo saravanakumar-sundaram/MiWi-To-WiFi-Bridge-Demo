@@ -50,20 +50,20 @@ MiWi applications are used from ASF release and Linux kernel is used for WiFi co
 
 ![GitHub Logo](/Images/Block-Daigram.png)
 
-# MiWi Network
+## MiWi Network
 - MiWi Network consist of PAN-Coordinator, Router or coordinator, End-device.
 - PAN-Coordinator Node directly connected with SAMAD2 XPRO board USB port and enumerated as COM port.
 -	MiWi applications are taken from ASF3.45 release. No major change in the existing application apart from the Naming and channel.
 
-# AT91SAMA5D27 on Linux
+## AT91SAMA5D27 on Linux
 - Limux4Sam_6.0 package with kernel 4.14.73 used to generate the zImage, device tree file by compiled on GCC compiler 7.3.0.
 - BuildRoot is built with required python2.7 modules, which will be used in TCP application.
 
-# ATWILC1000 Modules & Firmware
+## ATWILC1000 Modules & Firmware
 - WILC driver 15.02 version compiled against Kernel 4.14.73 and added in the /root of the Buildroot package. Firmware is added in /lib/firmware/mchp.
 - After the SAMA5D2 device kernel boot up, in root files system "mchp" folder will be available.
 
-# AWS EC2 Instance
+## AWS EC2 Instance
 -	Using AWS account we can create the EC2 service with AMI free-tier instance.
 -	This EC2 instance will provide the public and private IP’s to communicate with VPC Linux machine.
 -	In this AMI required applications are already installed to run our python based application.

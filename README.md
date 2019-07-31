@@ -225,7 +225,7 @@ Using WSN Monitor tool, MiWi network LED's can be controlled.
 6. Setup the MiWi network as much device required using SAMR30 XPlained Pro.
 7. Connect the PAN-Coordinator to SAMA5D2 USB port.
 8. Power up the other SAMR30 Router and EndDevices in same channel.
-9. Run the `$ python miwi_network_client.py` with server parameters `$ 53:211:142:228:6666”
+9. Run the `$ python miwi_network_client.py` with server parameters `$ 53:211:142:228:6666`
 10. Start the WSN monitor tool with `$ 53:211:142:228:8080` connection parameters.
 11. Now MiWi network topology will be displayed in WSN Monitor tool.
 12. MiWi network device LEDs can be controlled from WSN monitor tool.

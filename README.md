@@ -63,13 +63,27 @@ MiWi applications are used from ASF release and Linux kernel is used for WiFi co
 - WILC driver 15.02 version compiled against Kernel 4.14.73 and added in the /root of the Buildroot package. Firmware is added in /lib/firmware/mchp.
 - After the SAMA5D2 device kernel boot up, in root files system "mchp" folder will be available.
 
-## AWS EC2 Instance
+## AWS Cloud EC2 Instance Services
 -	Using AWS account we can create the EC2 service with AMI free-tier instance.
 -	This EC2 instance will provide the public and private IP’s to communicate with VPC Linux machine.
 -	In this AMI required applications are already installed to run our python based application.
 -	Using SSH application with private key provide by AWS cloud we open the VPC Linux terminal.
 -	This Linux terminal will be used to run any application developed on python or C, etc…
 
+## WSN Monitor Tool
+- The tool used to monitor and control the MiWi network. Tool is having two options to connect with network such as Serial port or TCP client.
+- In this demo, TCP client option is used to connect with AWS Cloud TCP server.
+
+# AWS Cloud EC2 Instance Setup
+We utilize EC2 (Amazon Elastic Compute Cloud) services for this demo. EC2 instance host the two TCP servers for MiWi network bridge and WSN monitor tool.
+
+## AWS EC2 Instance
+To host the python server, requires AMI Linux virtual machine. Amazon EC2 instance will provide the virtual Linux machine. The process is easy and straight forward once you have your AWS account ready. For a step by step guide please follow the amazon guide.
+- https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html
+
+- To run the python based TCP server, chose the "Amazon Linux AMI - 64-bit(x86)" free tier version for this demo.
+- To access the server follow the Amazon user guide.
+     - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html
 
 
 
